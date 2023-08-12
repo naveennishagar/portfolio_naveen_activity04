@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Portfolio</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+            <div class="home__data">
+                <div class="home__greeting" data-aos="fade-up">
+                    <br><br>
+                    <span>HELLO,</span>
+                </div>
+                <div class="home__title" data-aos="fade-up">
+                    <h1>I'm Naveen Nishagar</h1>
+                </div>
+                <div class="home__career" data-aos="fade-up">
+                    <p>Web Developer</p>
+                </div>
+                <div class="home__description" data-aos="fade-up">
+                    <p align="justfy">
+                        Welcome to my web developer portfolio, where I showcase my skills, expertise, and passion for crafting innovative and engaging web experiences.
+                        As a dedicated web developer, I am committed to creating functional and visually appealing websites that leave a lasting impression.
+                    </p>
+                </div>
+                <div class="home__button">
+                    <button class="home__hire" data-aos="fade-up">HIRE ME</button>
+                </div>
+                <div class="home__social" data-aos="fade-up">
+                    <a href="https://www.facebook.com" class="home__icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com" class="home__icon" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/home?originalSubdomain=lk" target="_blank" class="home__icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://discord.com" class="home__icon" target="_blank"><i class="fab fa-discord"></i></a>
+                </div>
+                <div class="home__img" data-aos="fade-up">
+                    <img src="images/IMG_20220928_160053.jpg" alt="naveen nishagar" class="home-image" height="100px" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="bd-container">
+            <h2 class="section-title" data-aos="fade-up">MY SERVICES</h2>
+            <p class="section-subtitle" data-aos="fade-up">Elevating brands through exceptional web experiences.</p>
+            <div class="services__container bd-grid">
+                <div class="services__data" data-aos="fade-up">
+                    <div class="services__img">
+                        <img src="images/web-design.svg" alt="">
+                    </div>
+                    <h3 class="services__title">Web Design</h3>
+                    <p class="services__description">I specialize in creating visually appealing and user-friendly website designs.</p>
+                </div>
+                <div class="services__data" data-aos="fade-up">
+                    <div class="services__img">
+                        <img src="images/web-development.svg" alt="">
+                    </div>
+                    <h3 class="services__title">Web Development</h3>
+                    <p class="services__description">I develop custom websites using the latest web technologies and frameworks.</p>
+                </div>
+                <div class="services__data" data-aos="fade-up">
+                    <div class="services__img">
+                        <img src="images/graphics-design.svg" alt="">
+                    </div>
+                    <h3 class="services__title">Graphics Design</h3>
+                    <p class="services__description">I create eye-catching graphics and illustrations for websites and digital media.</p>
+                </div>
+                <div class="services__data" data-aos="fade-up">
+                    <div class="services__img">
+                        <img src="images/soft-skills.svg" alt="">
+                    </div>
+                    <h3 class="services__title">Soft Skills</h3>
+                    <p class="services__description">In addition to technical skills, I possess strong communication and teamwork abilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="portfolio" id="portfolio">
+        <div class="bd-container">
+            <h2 class="section-title" data-aos="fade-up">PROJECTS</h2>
+            <p class="section-subtitle" data-aos="fade-up">A showcase of my previous works</p>
+           
+            <div class="slider">
+                <img src="images/OIP.jpg" alt="Image 1">
+                <img src="images/OIP1.jpg" alt="Image 2">
+                <img src="images/OIP2.png" alt="Image 3">
+              </div>
+        </div>
+    </section>
+
+   
+        <section class="contact" id="contact">
+        <div class="bd-container">
+            <h2 class="section-title" data-aos="fade-up">CONTACT</h2>
+            <p class="section-subtitle" data-aos="fade-up">Have a question or want to work together? Let's get in touch.</p>
+            <div class="contact__container bd-grid">
+                <form onsubmit="return validateForm();" action="functions.php" class="contact__form" method="POST" data-aos="fade-up">
+                    <input type="text" name="name" placeholder="Name" class="contact__input">
+                    <input type="email" name="email" placeholder="Email" class="contact__input">
+                    <textarea name="message" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+                    <input type="submit" name="submit" value="Submit" class="contact__button">
+                </form>
+          
+                <div class="contact__info" data-aos="fade-up">
+                    <h3 class="contact__subtitle">Contact Information</h3>
+                    <div class="contact__text">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>120, Kottagoda, Badulla, Sri Lanka</span>
+                    </div>
+                    <div class="contact__text">
+                        <i class="fas fa-envelope"></i>
+                        <span>nishagar@gmail.com</span>
+                    </div>
+                    <div class="contact__text">
+                        <i class="fas fa-phone"></i>
+                        <span>+94 123 456 789</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <footer class="footer">
+        <div class="bd-container">
+            <p class="footer__text">&copy; 2023 Naveen Nishagar | All rights reserved.</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com" class="footer__icon" target="_blank"><i class="fab fa-facebook"></i>facebook</a>
+                <a href="https://github.com" class="footer__icon" target="_blank"><i class="fab fa-github"></i>github</a>
+                <a href="https://www.linkedin.com/home?originalSubdomain=lk" target="_blank" class="footer__icon"><i class="fab fa-linkedin"></i>linkedin</a>
+                <a href="https://discord.com" class="footer__icon" target="_blank"><i class="fab fa-discord"></i>discord</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
